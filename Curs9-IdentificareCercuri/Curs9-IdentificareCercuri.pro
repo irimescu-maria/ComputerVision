@@ -21,3 +21,8 @@ SOURCES += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+INCLUDEPATH += D:\opencv\build\include \
+
+LIBS += -LD:\opencv\build\x64\vc15\lib \
+-lopencv_world400
